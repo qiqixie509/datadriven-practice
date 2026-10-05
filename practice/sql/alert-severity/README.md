@@ -12,7 +12,7 @@
 | Accepted | on the first submission |
 | Time | 11 min |
 | Hints | none |
-| Query complexity | O(n log n), optimal |
+| Query complexity | O(n²), the optimum is O(n log n) |
 | Concepts | Null Handling, Row Offsets, Row Limiting, Multiple WINDOWs, Window Partitioning, Ranking, Row Numbering, Query Basics, Storage Optimization, Scalar Subquery, Filtering, Window Deduplication |
 
 The accepted solution is in [`solution.sql`](./solution.sql).
