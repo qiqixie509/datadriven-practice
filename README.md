@@ -8,6 +8,7 @@ Scored work from [DataDriven](https://datadriven.io/u/white_harbor_3003), commit
 
 | Problem | Domain | Difficulty | Solved |
 |---|---|---|---|
+| [Above the Title](./practice/python/above-the-title) | Python | Medium | 2026-10-04 |
 | [Two Sides of the Ledger](./practice/sql/two-sides-of-the-ledger) | SQL | Hard | 2026-10-04 |
 | [Above Average Interactions](./practice/sql/above-average-interactions) | SQL | Easy | 2026-10-04 |
 | [Crossed Signals](./practice/sql/crossed-signals) | SQL | Hard | 2026-10-04 |
