@@ -8,6 +8,7 @@ Scored work from [DataDriven](https://datadriven.io/u/white_harbor_3003), commit
 
 | Problem | Domain | Difficulty | Solved |
 |---|---|---|---|
+| [Against the House](./practice/python/against-the-house) | Python | Medium | 2026-10-05 |
 | [Between the Spaces](./practice/sql/between-the-spaces) | SQL | Medium | 2026-10-05 |
 | [Alert Severity](./practice/sql/alert-severity) | SQL | Hard | 2026-10-05 |
 | [Across the Aisles](./practice/sql/across-the-aisles) | SQL | Hard | 2026-10-05 |
