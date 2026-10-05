@@ -8,6 +8,7 @@ Scored work from [DataDriven](https://datadriven.io/u/white_harbor_3003), commit
 
 | Problem | Domain | Difficulty | Solved |
 |---|---|---|---|
+| [Between the Spaces](./practice/sql/between-the-spaces) | SQL | Medium | 2026-10-05 |
 | [Alert Severity](./practice/sql/alert-severity) | SQL | Hard | 2026-10-05 |
 | [Across the Aisles](./practice/sql/across-the-aisles) | SQL | Hard | 2026-10-05 |
 | [Above Average Product Prices](./practice/sql/above-average-product-prices) | SQL | Medium | 2026-10-05 |
