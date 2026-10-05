@@ -8,6 +8,7 @@ Scored work from [DataDriven](https://datadriven.io/u/white_harbor_3003), commit
 
 | Problem | Domain | Difficulty | Solved |
 |---|---|---|---|
+| [Above Average Interactions](./practice/sql/above-average-interactions) | SQL | Easy | 2026-10-04 |
 | [Crossed Signals](./practice/sql/crossed-signals) | SQL | Hard | 2026-10-04 |
 | [Active Campaigns](./practice/sql/active-campaigns) | SQL | Easy | 2026-10-04 |
 
