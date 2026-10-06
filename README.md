@@ -8,6 +8,7 @@ Scored work from [DataDriven](https://datadriven.io/u/white_harbor_3003), commit
 
 | Problem | Domain | Difficulty | Solved |
 |---|---|---|---|
+| [Tokens With Non-Read Scope Prefix](./practice/sql/tokens-with-non-read-scope-prefix) | SQL | Medium | 2026-10-06 |
 | [Against the House](./practice/python/against-the-house) | Python | Medium | 2026-10-05 |
 | [Between the Spaces](./practice/sql/between-the-spaces) | SQL | Medium | 2026-10-05 |
 | [Alert Severity](./practice/sql/alert-severity) | SQL | Hard | 2026-10-05 |
