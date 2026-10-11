@@ -1,0 +1,215 @@
+{
+  "tables": [
+    {
+      "name": "dim_users",
+      "columns": [
+        {
+          "name": "id",
+          "type": "VARCHAR",
+          "key": "pk"
+        },
+        {
+          "name": "name",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "email",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "phone",
+          "type": "VARCHAR"
+        }
+      ]
+    },
+    {
+      "name": "fact_comments",
+      "columns": [
+        {
+          "name": "id",
+          "type": "VARCHAR",
+          "key": "pk"
+        },
+        {
+          "name": "comment_by",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "comment_to",
+          "type": "VARCHAR",
+          "key": "fk"
+        },
+        {
+          "name": "content",
+          "type": "TEXT"
+        },
+        {
+          "name": "create_at",
+          "type": "TIMESTAMP"
+        },
+        {
+          "name": "update_at",
+          "type": "TIMESTAMP"
+        }
+      ]
+    },
+    {
+      "name": "fact_reactions",
+      "columns": [
+        {
+          "name": "post_id",
+          "type": "VARCHAR",
+          "key": "fk"
+        },
+        {
+          "name": "user_id",
+          "type": "VARCHAR",
+          "key": "fk"
+        },
+        {
+          "name": "type",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "create_at",
+          "type": "TIMESTAMP"
+        },
+        {
+          "name": "vendor",
+          "type": "VARCHAR"
+        }
+      ]
+    },
+    {
+      "name": "fact_views",
+      "columns": [
+        {
+          "name": "post_id",
+          "type": "VARCHAR",
+          "key": "fk"
+        },
+        {
+          "name": "user_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "durations",
+          "type": "INT"
+        }
+      ]
+    },
+    {
+      "name": "dim_posts",
+      "columns": [
+        {
+          "name": "id",
+          "type": "VARCHAR",
+          "key": "pk"
+        },
+        {
+          "name": "parent_post_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "user_id",
+          "type": "VARCHAR",
+          "key": "fk"
+        },
+        {
+          "name": "content",
+          "type": "TEXT"
+        },
+        {
+          "name": "created_at",
+          "type": "TIMESTAMP"
+        },
+        {
+          "name": "updated_at",
+          "type": "TIMESTAMP"
+        },
+        {
+          "name": "type"
+        }
+      ]
+    },
+    {
+      "name": "dim_shares",
+      "columns": [
+        {
+          "name": "post_id",
+          "type": "VARCHAR",
+          "key": "fk"
+        },
+        {
+          "name": "shared_by",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "vendor",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "shared_at",
+          "type": "TIMESTAMP"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from": {
+        "table": "fact_reactions",
+        "column": "post_id"
+      },
+      "to": {
+        "table": "fact_views",
+        "column": "post_id"
+      },
+      "foreign_key": true
+    },
+    {
+      "from": {
+        "table": "fact_reactions",
+        "column": "post_id"
+      },
+      "to": {
+        "table": "fact_comments",
+        "column": "comment_to"
+      },
+      "foreign_key": true
+    },
+    {
+      "from": {
+        "table": "fact_reactions",
+        "column": "user_id"
+      },
+      "to": {
+        "table": "dim_users",
+        "column": "id"
+      },
+      "foreign_key": true
+    },
+    {
+      "from": {
+        "table": "fact_comments",
+        "column": "comment_to"
+      },
+      "to": {
+        "table": "dim_posts",
+        "column": "id"
+      },
+      "foreign_key": true
+    },
+    {
+      "from": {
+        "table": "dim_shares",
+        "column": "post_id"
+      },
+      "to": {
+        "table": "dim_posts",
+        "column": "id"
+      },
+      "foreign_key": true
+    }
+  ]
+}
