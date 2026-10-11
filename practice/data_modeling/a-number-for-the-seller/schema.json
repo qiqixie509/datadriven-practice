@@ -1,0 +1,145 @@
+{
+  "tables": [
+    {
+      "name": "dim_seller",
+      "columns": [
+        {
+          "name": "id",
+          "type": "VARCHAR",
+          "key": "pk"
+        },
+        {
+          "name": "name",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "gender",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "email",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "phone",
+          "type": "VARCHAR"
+        }
+      ]
+    },
+    {
+      "name": "dim_products",
+      "columns": [
+        {
+          "name": "name",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "id",
+          "type": "VARCHAR",
+          "key": "pk"
+        },
+        {
+          "name": "price",
+          "type": "DECIMAL"
+        }
+      ]
+    },
+    {
+      "name": "fact_sale",
+      "columns": [
+        {
+          "name": "quantity",
+          "type": "INT"
+        },
+        {
+          "name": "product_id",
+          "type": "VARCHAR",
+          "key": "fk"
+        },
+        {
+          "name": "id",
+          "type": "VARCHAR",
+          "key": "pk"
+        },
+        {
+          "name": "total_amount",
+          "type": "DECIMAL"
+        },
+        {
+          "name": "created_at",
+          "type": "TIMESTAMP"
+        },
+        {
+          "name": "sale_date",
+          "type": "DATE"
+        }
+      ]
+    },
+    {
+      "name": "new_table",
+      "columns": []
+    },
+    {
+      "name": "fact_list",
+      "columns": [
+        {
+          "name": "product_id",
+          "type": "VARCHAR",
+          "key": "fk"
+        },
+        {
+          "name": "seller_id",
+          "type": "VARCHAR",
+          "key": "fk"
+        },
+        {
+          "name": "active",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "update_at",
+          "type": "TIMESTAMP"
+        },
+        {
+          "name": "went_live_date",
+          "type": "DATE"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from": {
+        "table": "fact_list",
+        "column": "seller_id"
+      },
+      "to": {
+        "table": "dim_seller",
+        "column": "id"
+      },
+      "foreign_key": true
+    },
+    {
+      "from": {
+        "table": "fact_sale",
+        "column": "product_id"
+      },
+      "to": {
+        "table": "fact_list",
+        "column": "product_id"
+      },
+      "foreign_key": true
+    },
+    {
+      "from": {
+        "table": "fact_sale",
+        "column": "product_id"
+      },
+      "to": {
+        "table": "dim_products",
+        "column": "id"
+      },
+      "foreign_key": true
+    }
+  ]
+}
