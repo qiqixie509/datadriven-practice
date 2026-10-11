@@ -1,0 +1,84 @@
+{
+  "tables": [
+    {
+      "name": "dim_plate",
+      "columns": [
+        {
+          "name": "id",
+          "type": "VARCHAR",
+          "key": "pk"
+        },
+        {
+          "name": "plate_number",
+          "type": "VARCHAR"
+        }
+      ]
+    },
+    {
+      "name": "dim_section",
+      "columns": [
+        {
+          "name": "id",
+          "type": "VARCHAR",
+          "key": "pk"
+        },
+        {
+          "name": "name",
+          "type": "VARCHAR"
+        }
+      ]
+    },
+    {
+      "name": "fact_commuter",
+      "columns": [
+        {
+          "name": "event_id",
+          "type": "VARCHAR",
+          "key": "pk"
+        },
+        {
+          "name": "plate_id",
+          "type": "VARCHAR",
+          "key": "fk"
+        },
+        {
+          "name": "section_id",
+          "type": "VARCHAR",
+          "key": "fk"
+        },
+        {
+          "name": "event_type",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "event_time",
+          "type": "TIMESTAMP"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from": {
+        "table": "fact_commuter",
+        "column": "plate_id"
+      },
+      "to": {
+        "table": "dim_plate",
+        "column": "id"
+      },
+      "foreign_key": true
+    },
+    {
+      "from": {
+        "table": "fact_commuter",
+        "column": "section_id"
+      },
+      "to": {
+        "table": "dim_section",
+        "column": "id"
+      },
+      "foreign_key": true
+    }
+  ]
+}
