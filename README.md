@@ -8,6 +8,7 @@ Scored work from [DataDriven](https://datadriven.io/u/white_harbor_3003), commit
 
 | Problem | Domain | Difficulty | Solved |
 |---|---|---|---|
+| [Twice on the Wire](./practice/python/twice-on-the-wire) | Python | Easy | 2026-10-13 |
 | [Quantile Calculator](./practice/python/quantile-calculator) | Python | Easy | 2026-10-13 |
 | [Single File](./practice/python/single-file) | Python | Easy | 2026-10-13 |
 | [Size the Executors](./practice/spark/size-the-executors) | Spark | Medium | 2026-10-13 |
