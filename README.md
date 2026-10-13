@@ -8,6 +8,7 @@ Scored work from [DataDriven](https://datadriven.io/u/white_harbor_3003), commit
 
 | Problem | Domain | Difficulty | Solved |
 |---|---|---|---|
+| [The Cloud Bill](./practice/sql/the-cloud-bill) | SQL | Medium | 2026-10-13 |
 | [The Heaviest Hitters](./practice/sql/the-heaviest-hitters) | SQL | Easy | 2026-10-13 |
 | [Never-Ordered Products](./practice/sql/never-ordered-products) | SQL | Easy | 2026-10-13 |
 | [Latest Version Per Service](./practice/sql/latest-version-per-service) | SQL | Easy | 2026-10-13 |
