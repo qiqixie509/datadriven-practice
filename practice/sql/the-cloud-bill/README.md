@@ -12,7 +12,7 @@
 | Accepted | on the first submission |
 | Time | 11 min |
 | Hints | none |
-| Query complexity | O(n log n), optimal |
+| Query complexity | O(n), the optimum is O(n log n) |
 | Concepts | Conditional Logic, Conditional Aggregation, Date Formatting, Grouping, Case Conversion, Query Basics, Sums & Averages |
 
 The accepted solution is in [`solution.sql`](./solution.sql).
