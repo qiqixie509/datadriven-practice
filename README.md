@@ -8,6 +8,7 @@ Scored work from [DataDriven](https://datadriven.io/u/white_harbor_3003), commit
 
 | Problem | Domain | Difficulty | Solved |
 |---|---|---|---|
+| [The Word Census](./practice/python/the-word-census) | Python | Easy | 2026-10-13 |
 | [Twice on the Wire](./practice/python/twice-on-the-wire) | Python | Easy | 2026-10-13 |
 | [Quantile Calculator](./practice/python/quantile-calculator) | Python | Easy | 2026-10-13 |
 | [Single File](./practice/python/single-file) | Python | Easy | 2026-10-13 |
