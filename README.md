@@ -8,6 +8,7 @@ Scored work from [DataDriven](https://datadriven.io/u/white_harbor_3003), commit
 
 | Problem | Domain | Difficulty | Solved |
 |---|---|---|---|
+| [Too Many Small Files](./practice/spark/too-many-small-files) | Spark | Easy | 2026-10-13 |
 | [The Word Count Shuffle Trap](./practice/spark/the-word-count-shuffle-trap) | Spark | Easy | 2026-10-13 |
 | [Tokens With Non-Read Scope Prefix](./practice/sql/tokens-with-non-read-scope-prefix) | SQL | Medium | 2026-10-06 |
 | [Content Engagement Data Model](./practice/data_modeling/content-engagement-data-model) | Data Modeling | Hard | 2026-10-06 |
