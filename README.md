@@ -8,6 +8,7 @@ Scored work from [DataDriven](https://datadriven.io/u/white_harbor_3003), commit
 
 | Problem | Domain | Difficulty | Solved |
 |---|---|---|---|
+| [The Eviction Policy](./practice/python/the-eviction-policy) | Python | Medium | 2026-10-13 |
 | [No Days Off](./practice/python/no-days-off) | Python | Medium | 2026-10-13 |
 | [The Top Words](./practice/python/the-top-words) | Python | Medium | 2026-10-13 |
 | [The Month-by-Month Snapshot](./practice/python/the-month-by-month-snapshot) | Python | Medium | 2026-10-13 |
