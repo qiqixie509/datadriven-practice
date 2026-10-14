@@ -8,6 +8,7 @@ Scored work from [DataDriven](https://datadriven.io/u/white_harbor_3003), commit
 
 | Problem | Domain | Difficulty | Solved |
 |---|---|---|---|
+| [The Disputed Fare](./practice/python/the-disputed-fare) | Python | Medium | 2026-10-14 |
 | [The Table Thief](./practice/python/the-table-thief) | Python | Medium | 2026-10-14 |
 | [The Event Window](./practice/python/the-event-window) | Python | Medium | 2026-10-14 |
 | [Ebb and Flow](./practice/sql/ebb-and-flow) | SQL | Hard | 2026-10-13 |
