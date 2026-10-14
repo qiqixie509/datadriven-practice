@@ -8,6 +8,7 @@ Scored work from [DataDriven](https://datadriven.io/u/white_harbor_3003), commit
 
 | Problem | Domain | Difficulty | Solved |
 |---|---|---|---|
+| [The Event Window](./practice/python/the-event-window) | Python | Medium | 2026-10-14 |
 | [Ebb and Flow](./practice/sql/ebb-and-flow) | SQL | Hard | 2026-10-13 |
 | [Still Breathing](./practice/sql/still-breathing) | SQL | Medium | 2026-10-13 |
 | [The Cloud Bill](./practice/sql/the-cloud-bill) | SQL | Medium | 2026-10-13 |
