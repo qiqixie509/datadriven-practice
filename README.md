@@ -8,6 +8,7 @@ Scored work from [DataDriven](https://datadriven.io/u/white_harbor_3003), commit
 
 | Problem | Domain | Difficulty | Solved |
 |---|---|---|---|
+| [The Trip Aggregator](./practice/python/the-trip-aggregator) | Python | Medium | 2026-10-14 |
 | [What the Card Remembers](./practice/python/what-the-card-remembers) | Python | Medium | 2026-10-14 |
 | [The Disputed Fare](./practice/python/the-disputed-fare) | Python | Medium | 2026-10-14 |
 | [The Table Thief](./practice/python/the-table-thief) | Python | Medium | 2026-10-14 |
