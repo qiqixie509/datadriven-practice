@@ -12,7 +12,7 @@
 | Accepted | on the first submission |
 | Time | 22 min |
 | Hints | none |
-| Query complexity | O(n log n), optimal |
+| Query complexity | O(n), the optimum is O(n²) |
 | Concepts | Grouping, Group Filtering, Min & Max, Query Basics, Self-Join, Scalar Subquery, Sums & Averages, Filtering |
 
 The accepted solution is in [`solution.sql`](./solution.sql).

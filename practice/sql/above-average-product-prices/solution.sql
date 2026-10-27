@@ -1,14 +1,17 @@
-from pyspark.sql import functions as F
-
-base_price = (
-  transactions.groupBy("product_id")
-  .agg(
-    F.min(F.col("total_amount")).alias("base_price")
-    )
+with base_price as (
+  select 
+    product_id,
+    min(total_amount) as base_price
+  from transactions
+  group by 1
+),
+avg_base_price as (
+  select 
+    avg(base_price) as avg_price
+  from base_price
   )
-result = (
-  base_price.withColumn("avg_price", F.avg("base_price").over(Window.paritionBy()))
-  .filter(F.col("base_price") > F.col("avg_price"))
-  .select("product_id", "base_price")
-  )
-return result
+select
+  product_id,
+  base_price
+from base_price b, avg_base_price a
+where b.base_price > a.avg_price
