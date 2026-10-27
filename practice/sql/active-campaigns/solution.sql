@@ -1,12 +1,17 @@
-from pyspark.sql import functions as F
-
-results = (
-  ad_impressions.groupBy("ad_campaign")
-  .agg(
-    F.count("impression_id").alias("impressions"),
-    F.sum("revenue").alias("total_revenue"),
-    F.round(F.sum("clicked") * 100.0 / F.count("impression_id"), 1).alias("ctr")
-    )
-  .filter(F.col("impressions") > 15)
-  .orderBy(F.col("ctr").desc(), F.col("ad_campaign").asc())
+with agg as (
+  select 
+   ad_campaign,
+   count(impression_id) as impressions,
+   sum(revenue) as total_revenue,
+   sum(clicked) as total_clicks
+  from ad_impressions
+  group by ad_campaign
 )
+select 
+   ad_campaign,
+   impressions,
+   total_revenue,
+   round((total_clicks * 100.0 / impressions) , 1) as ctr
+from agg
+where impressions > 15
+order by round((total_clicks * 100.0 / impressions) , 1) desc, ad_campaign asc
