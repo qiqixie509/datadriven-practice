@@ -1,6 +1,6 @@
 # Let AQE Handle It
 
-*Five tasks take 35 minutes. The other 195 take 30 seconds.*
+*5 tasks take 35 minutes. The other 195 take 30 seconds.*
 
 [Spark · Medium · on DataDriven](https://datadriven.io/problems/let_aqe_handle_it)
 
