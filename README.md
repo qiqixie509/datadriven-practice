@@ -42,7 +42,7 @@ Scored work from [DataDriven](https://datadriven.io/u/white_harbor_3003), commit
 | [Between the Spaces](./practice/sql/between-the-spaces) | SQL | Medium | 2026-10-05 |
 | [Alert Severity](./practice/spark/alert-severity) | Spark | Hard | 2026-10-05 |
 | [Alert Severity](./practice/sql/alert-severity) | SQL | Hard | 2026-10-05 |
-| [Across the Aisles](./practice/sql/across-the-aisles) | SQL | Hard | 2026-10-05 |
+| [Across the Aisles](./practice/sql/across-the-aisles) | SQL | Medium | 2026-10-05 |
 | [Above Average Product Prices](./practice/spark/above-average-product-prices) | Spark | Medium | 2026-10-05 |
 | [Above Average Product Prices](./practice/sql/above-average-product-prices) | SQL | Medium | 2026-10-05 |
 | [The Resume Sifter](./practice/python/the-resume-sifter) | Python | Medium | 2026-10-05 |
